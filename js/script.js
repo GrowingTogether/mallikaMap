@@ -11,8 +11,8 @@ L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
 L.control.zoom({position: 'bottomleft'}).addTo(map);
 
 //Create My Custom Icon Variable
-var houseIcon = L.icon({
-	iconUrl:      'images/HomeIcon.png',
+var treeIcon = L.icon({
+	iconUrl:      'images/treeIcon.png',
 	iconSize:     [30, 30],
 	iconAnchor:   [15, 15],
 	popupAnchor:  [0, -15] 
@@ -25,7 +25,7 @@ $.getJSON('./js/geoJSON.json',function(data){
 		onEachFeature: makeMarkers,
 		pointToLayer: function (feature, latlng) {
 			//can you define the custom icon var here?
-			return L.marker(latlng, {icon:houseIcon});
+			return L.marker(latlng, {icon:treeIcon});
 		}
 	}).addTo(map);
 });
@@ -37,7 +37,6 @@ function makeMarkers(feature, layer) {
 		console.log(feature.properties.hTitle);
 	layer.on("click", function(e){
 		map.panTo(new L.LatLng(feature.geometry.coordinates[1],feature.geometry.coordinates[0]), {animate: true, duration: 1.0});
-		$('#houseTitle').text(feature.properties.hTitle)
 		$('.addressFill').text(feature.properties.hAddress)
 		$('.nabeFill').text(feature.properties.hNabe)
 		$('.timeFill').text(feature.properties.hTime)
@@ -46,9 +45,6 @@ function makeMarkers(feature, layer) {
 	});
 
  };
-
-
-
 
 
 //Defines what happens when marker is clicked
