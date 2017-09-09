@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Mallika Map</title>
 	<!-- script should maybe be moved to the bottom of the page?> -->
-	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
 
 </head>
 <body>
@@ -25,12 +25,14 @@
 	</div>
 	
 	<div id="information">
-		<div id="photoSpace"><img id="housePhoto" src="images/house1pic.png" style="width:100px;height:100px"></div>
+		<div id="photoSpace"><img id="photo" src="images/3.jpg" style="width:100px;height:100px"></div>
 		<div id="houseStats">
-			<b>Tree Type:  </b><span class="addressFill">Birch</span> 
-			<br><b>Address:  </b> <span class="nabeFill">23 Ashby St.</span>
-			<br><b>Year Planted:  </b><span class="timeFill">2015</span>
-			<br><b>Planting Partner:  </b><span class="infoFill">Oakland Middle School</span>
+			<b>Event:  </b><span class="name">OPTIONS Recovery Services</span> 
+			<br><b>Site Type:  </b> <span class="siteType">School</span>
+			<br><b>Address:  </b> <span class="address">23 Ashby St.</span>
+			<br><b>Year Planted:  </b><span class="year">2015</span>
+			<br><b>Number of Trees Planted:  </b><span class="treeCount">12</span>
+			<br><b>Types of Trees Planted:  </b><span class="treeType">12</span>
 		</div>
 	</div>
 </div>
@@ -58,7 +60,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
 <script src="https://rawgit.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

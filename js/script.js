@@ -1,6 +1,6 @@
 //Set Up The Map
 var map = L.map('map', {zoomControl: false})
-	.setView([40.698824, -73.989312], 13);
+	.setView([37.80655, -122.2721], 13);
 
 //Set Up Basemap Tiles From Stamen
 L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
@@ -34,14 +34,16 @@ $.getJSON('./js/geoJSON.json',function(data){
 function makeMarkers(feature, layer) {
 	var thisFeature = feature.properties;
 		console.log(layer);
-		console.log(feature.properties.hTitle);
+		console.log(feature.properties.siteNumber);
 	layer.on("click", function(e){
 		map.panTo(new L.LatLng(feature.geometry.coordinates[1],feature.geometry.coordinates[0]), {animate: true, duration: 1.0});
-		$('.addressFill').text(feature.properties.hAddress)
-		$('.nabeFill').text(feature.properties.hNabe)
-		$('.timeFill').text(feature.properties.hTime)
-		$('.infoFill').text(feature.properties.hInfo)
-		$('#housePhoto').attr("src",feature.properties.hPhoto)
+		$('.address').text(feature.properties.address)
+		$('.name').text(feature.properties.name)
+		$('.year').text(feature.properties.year)
+		$('.siteType').text(feature.properties.siteType)
+		$('.treeType').text(feature.properties.treeType)
+		$('.treeCount').text(feature.properties.treeCount)
+		$('#photo').attr("src",feature.properties.photo)
 	});
 
  };

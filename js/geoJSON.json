@@ -1,77 +1,97 @@
+// {
+//   "type": "FeatureCollection",
+//   "features": [
+//     {
+//       "type": "Feature",
+//       "properties": {
+//         "hTitle": "Chinatown Home-Stay",
+//         "hAddress": "Bay",
+//         "hNabe": "3490 45th St.",
+//         "hTime": "2016",
+//         "hInfo": "None",
+//         "hPhoto": "images/house4pic.png"
+//       },
+//       "geometry": {
+//         "type": "Point",
+//         "coordinates": [
+//           -73.98990780115128,
+//           40.71291693031445
+//         ]
+//       }
+//     },
+//   ]
+// }
+
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "hTitle": "Chinatown Home-Stay",
-        "hAddress": "Bay",
-        "hNabe": "3490 45th St.",
-        "hTime": "2016",
-        "hInfo": "None",
-        "hPhoto": "images/house4pic.png"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.98990780115128,
-          40.71291693031445
-        ]
-      }
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2798775,37.8428904 ]
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "hTitle": "Park Slope Shoebox",
-        "hAddress": "Birch",
-        "hNabe": "23 Ashby St.",
-        "hTime": "2015",
-        "hInfo": "Oakland Middle School",
-        "hPhoto": "images/house1pic.png"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.97722363471983,
-          40.68096754304294
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "hAddress": "Oak",
-        "hTitle": "",
-        "hNabe": "444 Chestnut St.",
-        "hTime": "2014",
-        "hInfo": "Oakland Middle School",
-        "hPhoto": "images/house2pic.png"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.96365970373154,
-          40.67482237771682
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "hAddress": "Orange",
-        "hTitle": "124 Park St.",
-        "hNabe": "124 Park St.",
-        "hTime": "2016",
-        "hInfo": "Movement Generation",
-        "hPhoto": "images/house3pic.png"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.96155416965485,
-          40.667891351079874
-        ]
-      }
+    "properties": {
+    "siteNumber":3,
+    "photo":"images/3.jpg",
+    "year":2013,
+    "name":"OPTIONS Recovery Services",
+    "siteType":"Service Provider",
+    "address":"1020 59th st, Oakland CA 94608",
+    "treeCount":12,
+    "treeType":"2 Cherries, 2 Plums,2  Apples, 2 Pears, 2 Figs, 1 Persimmon, 1 Lemon"
     }
-  ]
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2608438,37.8338172 ]
+    },
+    "properties": {
+    "siteNumber":4,
+    "photo":"images/4.jpg",
+    "year":2013,
+    "name":"Oakland International High School",
+    "siteType":"School",
+    "address":"4521 Webster Street, Oakland, CA 94609",
+    "treeCount":10,
+    "treeType":"2 Cherries, 2 Plums, 1 Apples, 1 Pears, 1 Figs, 1 Persimmon, 1 Orange, 1 Pomegranate"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.268202,37.842641 ]
+    },
+    "properties": {
+    "siteNumber":5,
+    "photo":"images/5.jpg",
+    "year":2013,
+    "name":"Donitra Henderson Dedication Planting w/ Phat Beets",
+    "siteType":"Park/ Community Garden",
+    "address":"5707 Dover Street, Oakland",
+    "treeCount":2,
+    "treeType":"Santa Rosa Plum, Orange"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2854683,37.8462189 ]
+    },
+    "properties": {
+    "siteNumber":6,
+    "photo":"images/6.png",
+    "year":2013,
+    "name":"Urban Permaculture Institute @ PLACE for Sustainable Living",
+    "siteType":"Streetside",
+    "address":"1121 64th Street, Oakland, CA 94608",
+    "treeCount":3,
+    "treeType":"Fig, Lemon, Avocado"
+    }
+  }
+]
 }
