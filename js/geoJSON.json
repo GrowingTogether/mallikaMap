@@ -72,6 +72,26 @@
           40.667891351079874
         ]
       }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+    "siteNumber":"3",
+    "photo":"images/3.jpg",
+    "year":"2013",
+    "name":"OPTIONS Recovery Services",
+    "siteType":"Service Provider",
+    "address":"1020 59th st, Oakland CA 94608",
+    "treeCount":"12",
+    "treeType":"2 Cherries, 2 Plums,2  Apples, 2 Pears, 2 Figs, 1 Persimmon, 1 Lemon"
+    },
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 
+          -122.2798775,
+          37.8428904 
+        ]
     }
+  }
   ]
 }
