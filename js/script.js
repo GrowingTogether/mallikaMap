@@ -1,6 +1,28 @@
+var t2013 = "year";
+var ob13 = {};
+ob13[t2013] = "2013";
+console.log(ob13);
+
+var t2014 = "year";
+var ob14 = {};
+ob14[t2014] = "2014";
+
+var cities = L.layerGroup(ob13);
+var cities14 = L.layerGroup(ob14);
+
+var overlayMaps = {
+    "2013 Trees": cities,
+    "2014 Trees": cities14
+};
+
 //Set Up The Map
-var map = L.map('map', {zoomControl: false})
+var map = L.map('map', {
+	zoomControl: false,
+	layers: [cities, cities14]
+})
 	.setView([37.8071415 , -122.2586092], 12);
+
+L.control.layers(overlayMaps).addTo(map);
 
 //Set Up Basemap Tiles From Stamen
 L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
@@ -18,6 +40,9 @@ var treeIcon = L.icon({
 	popupAnchor:  [0, -15] 
 })
 
+
+// layers: ["2013", "2014", "2015", "2016", "2017"]
+
 //Load External geoJSON (WTF is pointToLayer???)
 $.getJSON('./js/geoJSON.json',function(data){
 	//why is this a var?
@@ -33,10 +58,11 @@ $.getJSON('./js/geoJSON.json',function(data){
 
 function makeMarkers(feature, layer) {
 	var thisFeature = feature.properties;
-		console.log(layer);
-		console.log(feature.properties.hTitle);
+		// console.log(layer);
+		// console.log(feature.properties.hTitle);
 	layer.on("click", function(e){
 		map.panTo(new L.LatLng(feature.geometry.coordinates[1],feature.geometry.coordinates[0]), {animate: true, duration: 1.0});
+		console.log(feature.properties.year);
 		$('.name').text(feature.properties.name)
 		$('.siteType').text(feature.properties.siteType)
 		$('.address').text(feature.properties.address)
