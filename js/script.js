@@ -6,7 +6,7 @@ var map = L.map('map', {zoomControl: false})
 L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 	maxZoom: 17,
-	minZoom: 13
+	minZoom: 5
 }).addTo(map);
 L.control.zoom({position: 'bottomleft'}).addTo(map);
 
@@ -37,11 +37,13 @@ function makeMarkers(feature, layer) {
 		console.log(feature.properties.hTitle);
 	layer.on("click", function(e){
 		map.panTo(new L.LatLng(feature.geometry.coordinates[1],feature.geometry.coordinates[0]), {animate: true, duration: 1.0});
-		$('.addressFill').text(feature.properties.hAddress)
-		$('.nabeFill').text(feature.properties.hNabe)
-		$('.timeFill').text(feature.properties.hTime)
-		$('.infoFill').text(feature.properties.hInfo)
-		$('#housePhoto').attr("src",feature.properties.hPhoto)
+		$('.name').text(feature.properties.name)
+		$('.siteType').text(feature.properties.siteType)
+		$('.address').text(feature.properties.address)
+		$('.year').text(feature.properties.year)
+		$('.treeCount').text(feature.properties.treeCount)
+		$('.treeType').text(feature.properties.treeType)
+		$('#photo').attr("src",feature.properties.photo)
 	});
 
  };
