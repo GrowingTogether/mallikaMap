@@ -1,12 +1,12 @@
 //Set Up The Map
 var map = L.map('map', {zoomControl: false})
-	.setView([40.698824, -73.989312], 13);
+	.setView([37.8071415 , -122.2586092], 12);
 
 //Set Up Basemap Tiles From Stamen
 L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 	maxZoom: 17,
-	minZoom: 5
+	minZoom: 11
 }).addTo(map);
 L.control.zoom({position: 'bottomleft'}).addTo(map);
 
