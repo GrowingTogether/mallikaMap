@@ -34,6 +34,11 @@ h1{
 	box-sizing: border-box;
 }
 
+.leaflet-tile-pane{
+	opacity: .6;
+}
+
+
 /* Left side of the Top Bar*/
 	#titles{
 	float: left;
