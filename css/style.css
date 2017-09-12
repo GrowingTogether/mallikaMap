@@ -27,6 +27,7 @@ h1{
 	top: 0;
 	height: 160px;
 	width: 100%;
+	z-index: 400;
 	background: rgba(255, 255, 255, 0.9);
 	color: #555;
 	padding: 7px;
