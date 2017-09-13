@@ -90,7 +90,7 @@ h1{
 #infoBox {
 	position: absolute;
 	bottom: 25px;
-	left: 25px;
+	right: 25px;
 	background: rgba(255, 255, 255, 0.95);
 	color: #555;
 	outline: 2px solid white;

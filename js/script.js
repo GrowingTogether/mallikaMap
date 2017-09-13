@@ -72,7 +72,6 @@ var treePoints = {
         "year": "2013",
         "name": "First Planting: Canticle Farm and 36th Ave Apartments",
         "siteType": "Residences",
-        "address": "2000 36th ave",
         "treeCount": "17",
         "treeType": "2 Cherries, 3 Plums, 3 Apples, 2 Pears, 2 Figs, 1 Persimmon, 2 Lemon"
       }
@@ -82,8 +81,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -121.4351556,
-          38.5663325
+          -122.2721681,
+          37.8392379
         ]
       },
       "properties": {
@@ -92,7 +91,6 @@ var treePoints = {
         "year": "2013",
         "name": "55th St and Genoa Neighbors",
         "siteType": "Residences",
-        "address": "861 55th st",
         "treeCount": "12",
         "treeType": "2 Cherries, 2 Plums, 2 Apples, 2 Pears, 2 Figs, 2 Persimmon"
       }
@@ -112,7 +110,6 @@ var treePoints = {
         "year": "2013",
         "name": "OPTIONS Recovery Services",
         "siteType": "Service Provider",
-        "address": "1020 59th st, Oakland CA 94608",
         "treeCount": "12",
         "treeType": "2 Cherries, 2 Plums,2  Apples, 2 Pears, 2 Figs, 1 Persimmon, 1 Lemon"
       }
@@ -132,7 +129,6 @@ var treePoints = {
         "year": "2013",
         "name": "Oakland International High School",
         "siteType": "School",
-        "address": "4521 Webster Street, Oakland, CA 94609",
         "treeCount": "10",
         "treeType": "2 Cherries, 2 Plums, 1 Apples, 1 Pears, 1 Figs, 1 Persimmon, 1 Orange, 1 Pomegranate"
       }
@@ -151,8 +147,7 @@ var treePoints = {
         "photo": "images/5.jpg",
         "year": "2013",
         "name": "Donitra Henderson Dedication Planting w/ Phat Beets",
-        "siteType": "Park / Community Garden",
-        "address": "5707 Dover Street, Oakland",
+        "siteType": "Park",
         "treeCount": "2",
         "treeType": "Santa Rosa Plum, Orange"
       }
@@ -172,7 +167,6 @@ var treePoints = {
         "year": "2013",
         "name": "Urban Permaculture Institute @ PLACE for Sustainable Living",
         "siteType": "Streetside",
-        "address": "1121 64th Street, Oakland, CA 94608",
         "treeCount": "3",
         "treeType": "Fig, Lemon, Avocado"
       }
@@ -192,7 +186,6 @@ var treePoints = {
         "year": "2013",
         "name": "Community Rejuvenation Project + neighbors",
         "siteType": "Residences",
-        "address": "2721 60th Ave",
         "treeCount": "13",
         "treeType": "4 Cherries, 3 Meyer Lemons, 2 Bartlett Pears, 2 Asian Pears, 2 Apples"
       }
@@ -210,9 +203,8 @@ var treePoints = {
         "siteNumber": "8",
         "photo": "images/x.jpg",
         "year": "2013",
-        "name": "Sobrante Park school garden",
+        "name": "Sobrante Park School Garden",
         "siteType": "School",
-        "address": "470 El Paseo Drive Oakland, CA 94603",
         "treeCount": "6",
         "treeType": "Orange, Lemon, 2 Asian Pears, 2 Apples"
       }
@@ -232,7 +224,6 @@ var treePoints = {
         "year": "2013",
         "name": "POOR Magazine Pachamama Garden",
         "siteType": "Community Center",
-        "address": "8034 MacArthur Blvd",
         "treeCount": "8",
         "treeType": "Fig, Cherry, 2 Avocados, Apple, Lemon, Orange, Asian Pear, Plum"
       }
@@ -248,11 +239,10 @@ var treePoints = {
       },
       "properties": {
         "siteNumber": "10",
-        "photo": "images/?.jpg",
+        "photo": "images/10.jpg",
         "year": "2013",
         "name": "Castlemont Farm",
         "siteType": "School",
-        "address": "8601 MacArthur Blvd",
         "treeCount": "3",
         "treeType": "1 Fig, 2 Citrus"
       }
@@ -262,17 +252,16 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.4398839,
-          37.7892488
+          -122.279889,
+          37.855542
         ]
       },
       "properties": {
         "siteNumber": "11",
-        "photo": "images/?.jpg",
+        "photo": "images/11.jpg",
         "year": "2013",
         "name": "Spiral Gardens",
         "siteType": "Community Garden",
-        "address": "2850 Sacramento St",
         "treeCount": "2",
         "treeType": "Fig, Asian Pear"
       }
@@ -292,7 +281,6 @@ var treePoints = {
         "year": "2013",
         "name": "PLACE for Sustainable Living",
         "siteType": "Community Center",
-        "address": "1121 64th Street, Oakland, CA 94608",
         "treeCount": "8",
         "treeType": "1 Red Fuji Nagafu, 1 Apple, 1 Shinko Asian Pear, 1 Hosui Asian Pear, 1 Mexicola Avocado, 1 Meyer Lemon, 2 Trovita Oranges, 2 Loquats"
       }
@@ -312,7 +300,6 @@ var treePoints = {
         "year": "2013",
         "name": "St. Mary's Center Garden",
         "siteType": "Service Provider",
-        "address": "925 Brockhurst Street Oakland, CA 94608",
         "treeCount": "8",
         "treeType": "Gibson Golden Delicious Apple, Red Fuji Apple, Shinko Asian Pear, Hosui Asian Pear, Meyer Lemon, Stella Cherry, Trouvita Orange, Santa Rosa Plum"
       }
@@ -332,7 +319,6 @@ var treePoints = {
         "year": "2013",
         "name": "Oakland Youth Revolution Garden and Community Center",
         "siteType": "Community Center",
-        "address": "3026 East 16th St, Oakland",
         "treeCount": "7",
         "treeType": "Red Fuji Nagafu Apple, Hosui Asian pear, Mexicola Avocado, Stella Cherry, Meyer Lemon, Trouvita Orange, Moro Blood Orange"
       }
@@ -352,7 +338,6 @@ var treePoints = {
         "year": "2013",
         "name": "City Slickers West Oakland Gardeners",
         "siteType": "Residences",
-        "address": "3399 Peralta St, Oakland, CA 94608",
         "treeCount": "14",
         "treeType": "3 Meyer Lemon, 2 Asian Pear-Hosui, 3 Asian Pear-Shinko, 2 Honeycrisp Apple, 2 Gibson Golden Delicious, 1 Stella Cherry, 2 Blood Orange"
       }
@@ -362,8 +347,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1736205,
-          37.7376349
+          -122.1742338,
+          37.7371616
         ]
       },
       "properties": {
@@ -372,7 +357,6 @@ var treePoints = {
         "year": "2013",
         "name": "Stonehurst Elementary",
         "siteType": "School",
-        "address": "E st. and 103rd ave",
         "treeCount": "10",
         "treeType": "Gibson Golden Delicious Apple, Newtown Pippin Apple, Hosui Asian Pear, Shinko Asian Pear, Trouvita Orange, Moro Blood Orange, Bartlett Pear, Black Amber Plum, J.H. Hale Peach; Fig"
       }
@@ -392,7 +376,6 @@ var treePoints = {
         "year": "2013",
         "name": "Ashby Community Garden",
         "siteType": "Community Garden",
-        "address": "1370 Ashby Avenue, Berkeley",
         "treeCount": "8",
         "treeType": "2 Avocados, 2 Apples, Pear, Asian Pear, Lemon, Orange"
       }
@@ -412,7 +395,6 @@ var treePoints = {
         "year": "2013",
         "name": "Sobrante Park + Boxing association",
         "siteType": "School",
-        "address": "470 El Paseo Drive, Oakland, CA 94603",
         "treeCount": "8",
         "treeType": "2 Santa Rosa Plums, 2 Mariposa Plums, 2 Black Amber Plums, 3 Apples"
       }
@@ -432,7 +414,6 @@ var treePoints = {
         "year": "2013",
         "name": "La Biblioteca and neighbors",
         "siteType": "Community Center",
-        "address": "2334 E 15th st, Oakland",
         "treeCount": "8",
         "treeType": "2 Meyer Lemon, 2 Santa Rosa Plum, 2 Apple, 2 Pears"
       }
@@ -452,7 +433,6 @@ var treePoints = {
         "year": "2013",
         "name": "Franklin Community Center",
         "siteType": "Community Center",
-        "address": "1010 E 15th St, Oakland",
         "treeCount": "2",
         "treeType": "Fig, Lemon"
       }
@@ -462,8 +442,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1907594,
-          37.7592692
+          -122.1538652,
+          37.7658369
         ]
       },
       "properties": {
@@ -472,7 +452,6 @@ var treePoints = {
         "year": "2013",
         "name": "Rudsdale Continuation High School",
         "siteType": "School",
-        "address": "1180 70th Ave",
         "treeCount": "3",
         "treeType": "Avocado, Apple, Pear"
       }
@@ -492,7 +471,6 @@ var treePoints = {
         "year": "2013",
         "name": "King CDC Garden with Compassionate Leaders",
         "siteType": "School",
-        "address": "1939 Ward St, Berkeley, CA 94703",
         "treeCount": "3",
         "treeType": "Plum, Fig, Apple"
       }
@@ -512,7 +490,6 @@ var treePoints = {
         "year": "2014",
         "name": "MLK Day of Service w/ Phat Beets",
         "siteType": "Park",
-        "address": "5707 Dover St, Oakland",
         "treeCount": "1",
         "treeType": "Apple"
       }
@@ -532,7 +509,6 @@ var treePoints = {
         "year": "2014",
         "name": "California Hotel People's Grocery Orchard Planting",
         "siteType": "Community Garden",
-        "address": "35th St and Chestnut, oakland",
         "treeCount": "17",
         "treeType": "1 Lemon, 2 Persimmon, 2 Apple, 2 Fig, 2 Pear, 2 Apricot, 2 Cherries, 1 Pluot, 1 Plum, 1 Pomegranate"
       }
@@ -552,7 +528,6 @@ var treePoints = {
         "year": "2014",
         "name": "PUEBLO Leafing Out @ Elmhurst Community Prep",
         "siteType": "Streetside",
-        "address": "1800 98th ave, Oakland",
         "treeCount": "38",
         "treeType": "11 Quercus rubrum, 10 Acer B., 17 Acer rubrum"
       }
@@ -562,8 +537,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2989417,
-          37.8118941
+          -122.3000762,
+          37.8101836
         ]
       },
       "properties": {
@@ -571,8 +546,7 @@ var treePoints = {
         "photo": "images/26.jpg",
         "year": "2014",
         "name": "Trees 4 Life Ceremony",
-        "siteType": "Residence",
-        "address": "Wood and 12th st",
+        "siteType": "Residences",
         "treeCount": "4",
         "treeType": "2 Plum, 2 Apple"
       }
@@ -592,7 +566,6 @@ var treePoints = {
         "year": "2014",
         "name": "Black History is Every Month w/ Phat Beets + Self Help Hunger Program",
         "siteType": "Park",
-        "address": "5650 Adeline St, Oakland, CA",
         "treeCount": "2",
         "treeType": "Apple, Lemon"
       }
@@ -612,7 +585,6 @@ var treePoints = {
         "year": "2014",
         "name": "PUEBLO Leafing Out @ Stonehurst Elementary",
         "siteType": "Streetside",
-        "address": "901 105th Ave, Oakland CA ",
         "treeCount": "5",
         "treeType": "5 Quercus Agrifolia"
       }
@@ -622,8 +594,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1747078,
-          37.7368109
+          -122.1633355,
+          37.758108
         ]
       },
       "properties": {
@@ -631,8 +603,7 @@ var treePoints = {
         "photo": "images/29.jpg",
         "year": "2014",
         "name": "PUEBLO Leafing Out @ Castlemont H.S.",
-        "siteType": "Streetside/ School",
-        "address": "MacArthur Blvd between 85th ave – 95th ave",
+        "siteType": "Streetside",
         "treeCount": "29",
         "treeType": "On Campus: 4 Podocarpus, 1 Laurel, 2 Quercus rubrum; Streetside: 10 Quercus rubrum, 8 Laurelus, 4 Podocarpus"
       }
@@ -652,7 +623,6 @@ var treePoints = {
         "year": "2014",
         "name": "North Oakland Restorative Justice Council Planting",
         "siteType": "Park",
-        "address": "5707 Dover St, Oakland, CA 94609",
         "treeCount": "2",
         "treeType": "Plum, Pomegranate"
       }
@@ -671,8 +641,7 @@ var treePoints = {
         "photo": "images/31.jpg",
         "year": "2014",
         "name": "Full Harvest Urban Farm Arbor Day Celebration",
-        "siteType": "Community Garden",
-        "address": "3746 39th Ave, Oakland CA 94619",
+        "siteType": "Community Center",
         "treeCount": "10",
         "treeType": "2 Asian Pears, 2 Avocados, 4 Pineapple Guavas, 1 Moro Blood Orange, 1 Tangerine"
       }
@@ -692,7 +661,6 @@ var treePoints = {
         "year": "2014",
         "name": "ASCEND Academy parking lot",
         "siteType": "School",
-        "address": "3709 E. 12th St, Oakland, CA 94601",
         "treeCount": "6",
         "treeType": "2 Apples, 1 Fig, 1 Orange, 1 Tangerine, 1 Pineapple Guava"
       }
@@ -702,8 +670,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2702,
-          37.837873
+          -122.2702532,
+          37.8380891
         ]
       },
       "properties": {
@@ -711,8 +679,7 @@ var treePoints = {
         "photo": "images/33.jpg",
         "year": "2014",
         "name": "100 Trees For Peace - North Oakland Restorative Justice Council",
-        "siteType": "Residence",
-        "address": "53rd St, btwn Genoa St and MLK Jr. Way",
+        "siteType": "Residences",
         "treeCount": "1",
         "treeType": "1 Fig"
       }
@@ -732,7 +699,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Sojourner Truth Middle School",
         "siteType": "School",
-        "address": "8251 Fontaine Street, Oakland, CA 94605",
         "treeCount": "3",
         "treeType": "1 Owari Satsuma Tangerine, 1 Hosui Asian Pear, 1 Honeycrisp Apple"
       }
@@ -752,7 +718,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Victory Garden Foundation @ the Gardens at Lake Merritt",
         "siteType": "Community Garden",
-        "address": "666 Bellevue Ave, Oakland",
         "treeCount": "3",
         "treeType": "1 Blood Orange, 1 Pineapple Guava, 1 Pomegranate"
       }
@@ -772,7 +737,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Spiral Gardens",
         "siteType": "Community Garden",
-        "address": "2850 Sacramento St, Berkeley, CA 94702",
         "treeCount": "3",
         "treeType": "1 Oro Blanco Grapefruit, 1 Fig, 1 Cherimoya"
       }
@@ -792,7 +756,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Franklin Child Development Center",
         "siteType": "School",
-        "address": "1460 8th St. Berkeley, 94710",
         "treeCount": "4",
         "treeType": "1 Apricot, 1 Lime, 1 Satsuma, 1 Stella Cherry"
       }
@@ -812,7 +775,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Laney College Garden + International Rescue Commitee (IRC)",
         "siteType": "Community Garden",
-        "address": "900 Fallon St",
         "treeCount": "6",
         "treeType": "Fig, Pomegranate, Meyer Lemon, Eureka Lemon, Tangerine, Lime"
       }
@@ -831,8 +793,7 @@ var treePoints = {
         "photo": "images/39.jpg",
         "year": "2014",
         "name": "100 Trees For Peace - People's Grocery Garden",
-        "siteType": "Community Garden",
-        "address": "909 7th St, Oakland, CA 94607",
+        "siteType": "Community Center",
         "treeCount": "5",
         "treeType": "Bearss Lime, Meyer Lemon, Avocado, Asian Pear, Honeycrisp Apple"
       }
@@ -852,7 +813,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Oakland LEAF @ EnCompass Academy",
         "siteType": "School",
-        "address": "1025 81st Ave, Oakland, CA 94621",
         "treeCount": "16",
         "treeType": "2 Tangerine, 1 Meyer Lemon, 2 Asian Pears, 1 Fuyu Persimmon, 2 Pineapple Guava, 2 Pomegranates, 2 Apples, 1 Blood Orange; Kindergarten Garden: 2 Tangerine, 1 Apple"
       }
@@ -872,7 +832,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - PUEBLO Cocina",
         "siteType": "Community Center",
-        "address": "7633 Macarthur Blvd",
         "treeCount": "17",
         "treeType": "2 Eureka Lemon, 2 Trovita Orange, 1 Fremont Mandarin, 1 Fuji Apple, 4 Figs, 1 Asian Pear, 1 Apricot, 1 Persimmon, 1 Blood Orange, 2 Avocados"
       }
@@ -892,7 +851,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Victory Garden Foundation @ Franklin Elementary",
         "siteType": "School",
-        "address": "915 Foothill Blvd. Oakland, CA 94606",
         "treeCount": "9",
         "treeType": "Asian Pear, Tangerine, Blood Orange, 2 Avocados, Cherry, 2 Fig, Apple"
       }
@@ -908,11 +866,10 @@ var treePoints = {
       },
       "properties": {
         "siteNumber": "43",
-        "photo": "images/?.jpg",
+        "photo": "images/43.jpg",
         "year": "2014",
         "name": "100 Trees For Peace - North Oakland Victory Garden",
-        "siteType": "Community Garden",
-        "address": "5316 Telegraph",
+        "siteType": "Community Center",
         "treeCount": "5",
         "treeType": "Honeycrisp Apple, Pineapple Guava, Asian Pear, Persimmon, Cherry"
       }
@@ -928,11 +885,10 @@ var treePoints = {
       },
       "properties": {
         "siteNumber": "44",
-        "photo": "images/?.jpg",
+        "photo": "images/44.jpg",
         "year": "2014",
         "name": "100 Trees For Peace - Victory Garden Foundation @ Cohen Bray House",
         "siteType": "Community Center",
-        "address": "1440 29th St, Oakland 94601",
         "treeCount": "8",
         "treeType": "Elderberry, Pomegranate, Pineapple Guava, Fig, 2 Asian Pears, Apple, Blood Orange"
       }
@@ -952,7 +908,6 @@ var treePoints = {
         "year": "2014",
         "name": "100 Trees For Peace - Merritt College - Landscape Horticulture Department Permaculture Hillside",
         "siteType": "School",
-        "address": "12500 Campus Drive, Oakland, California 94619",
         "treeCount": "20",
         "treeType": "1 Hosui Asian Pear, 1 20th C Asian Pear, 4 Trouvita Oranges, 2 Eureka Lemons, 4 Hachiya Persimmons, 1 Inca Plum, 1 Beauty Plum, 1 Northen Spy Apple, 1 Newtown Pippin Apple, 1 Honeycrisp Apple,1 Comice Pear, 2 Blenheim Apricots"
       }
@@ -972,7 +927,6 @@ var treePoints = {
         "year": "2014",
         "name": "Memorial Tabernacle Church",
         "siteType": "Place of Worship",
-        "address": "5801 Racine St, Oakland",
         "treeCount": "1",
         "treeType": "Santa Rosa Plum"
       }
@@ -982,8 +936,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.280639,
-          37.837893
+          -122.280578,
+          37.838102
         ]
       },
       "properties": {
@@ -991,8 +945,7 @@ var treePoints = {
         "photo": "images/47.jpg",
         "year": "2014",
         "name": "North Oakland Restorative Justice Council - Memorial Planting for Isaiah Sudan",
-        "siteType": "Residence",
-        "address": "54th St, btwn San Pablo Ave and Gaskill St",
+        "siteType": "Residences",
         "treeCount": "1",
         "treeType": "White Genoa Fig"
       }
@@ -1012,7 +965,6 @@ var treePoints = {
         "year": "2014",
         "name": "Destiny Arts Center",
         "siteType": "Community Center",
-        "address": "970 Grace Avenue, Oakland, CA 94608",
         "treeCount": "9",
         "treeType": "3 Pineapple Guava, 2 Meyer Lemon, 1 Hachiya Persimmon, 1 Newtown Pippin Apple, 1 Hosui Asian Pear, 1 20th Century Asian Pear"
       }
@@ -1032,7 +984,6 @@ var treePoints = {
         "year": "2015",
         "name": "Oakland Peace Center- Planting for Racial Justice",
         "siteType": "Community Center",
-        "address": "111 Fairmount Ave, Oakland, CA 94611",
         "treeCount": "2",
         "treeType": "Lemon, Fig"
       }
@@ -1052,7 +1003,6 @@ var treePoints = {
         "year": "2015",
         "name": "Westlake Middle School",
         "siteType": "School",
-        "address": "2629 Harrison st, Oakland",
         "treeCount": "33",
         "treeType": "Hillside: 2 Avocados, 2 Olives, 2 Figs, 2 Apples, 2 Asian Pears, 1 Mulberry, 2 Elderberry, 1 Persimmon; Courtyard: 2 Lemons, 4 Oranges, 7 Tangerines, 3 Pomegranates, 3 Pineapple Guavas"
       }
@@ -1062,8 +1012,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.4360481,
-          37.5407246
+          -122.3444184,
+          37.9389867
         ]
       },
       "properties": {
@@ -1072,7 +1022,6 @@ var treePoints = {
         "year": "2015",
         "name": "Three Hearts Urban Food Forest",
         "siteType": "Community Garden",
-        "address": "Richmond",
         "treeCount": "6",
         "treeType": "Misc trees"
       }
@@ -1082,8 +1031,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.2979012,
-          37.8868088
+          -122.298731,
+          37.886676
         ]
       },
       "properties": {
@@ -1092,7 +1041,6 @@ var treePoints = {
         "year": "2015",
         "name": "Gill Tract Community Farm",
         "siteType": "Community Garden",
-        "address": "San Pablo Ave and Marin Ave, Albany, CA 94706",
         "treeCount": "8",
         "treeType": "Pineapple Guava Shrubs, Elderberry Shrubs, Dwarf Citrus"
       }
@@ -1112,7 +1060,6 @@ var treePoints = {
         "year": "2015",
         "name": "Youth Uprising Youth Center",
         "siteType": "Community Center",
-        "address": "8711 MacArthur Blvd, Oakland, CA 94605",
         "treeCount": "6",
         "treeType": "Apple, Plum, Orange, Fig, Pomegranate, Apricot"
       }
@@ -1132,7 +1079,6 @@ var treePoints = {
         "year": "2015",
         "name": "Alliance Academy",
         "siteType": "School",
-        "address": "1800 98th Ave, Oakland, CA 94603",
         "treeCount": "5",
         "treeType": "1 Lemon, 2 Oranges, 2 Apples"
       }
@@ -1152,7 +1098,6 @@ var treePoints = {
         "year": "2015",
         "name": "Montera Middle School",
         "siteType": "School",
-        "address": "5555 Ascot Dr, Oakland, CA 94611",
         "treeCount": "8",
         "treeType": "2 Lemons, 2 oranges, 2 pineapple guava, 2 apples"
       }
@@ -1172,7 +1117,6 @@ var treePoints = {
         "year": "2015",
         "name": "Bottoms Up Garden",
         "siteType": "Community Garden",
-        "address": "814 Peralta St, Oakland, CA 94607",
         "treeCount": "8",
         "treeType": "Miscellaneous Fruit Trees "
       }
@@ -1192,7 +1136,6 @@ var treePoints = {
         "year": "2015",
         "name": "Global Family Elementary",
         "siteType": "School",
-        "address": "2035 40th Ave, Oakland, CA 94601",
         "treeCount": "14",
         "treeType": "3 Lemons, 4 Tangerines, 3 Orangea, 4 Pineapple Guavas"
       }
@@ -1202,8 +1145,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1640862,
-          37.7591887
+          -122.165642,
+          37.758286
         ]
       },
       "properties": {
@@ -1212,7 +1155,6 @@ var treePoints = {
         "year": "2015",
         "name": "Castlemont H.S. Food Forest",
         "siteType": "School",
-        "address": "8601 MacArthur Blvd",
         "treeCount": "4",
         "treeType": "Pineapple Guava, White Sapote, Elderberry, Persimmon"
       }
@@ -1232,7 +1174,6 @@ var treePoints = {
         "year": "2016",
         "name": "Hoover Elementary Garden",
         "siteType": "School",
-        "address": "890 Brockhurst St, Oakland, CA 94608",
         "treeCount": "21",
         "treeType": "2 Avocados, 2 Pear, 2 Apples, 2 Oranges, 2 Tangerines, 2 Olives, 3 Elderberries, 2 Pomegranates, 4 Pineapple Guavas, 2 Persimmons, 3 Elderberries, 2 Pomegranates "
       }
@@ -1252,7 +1193,6 @@ var treePoints = {
         "year": "2016",
         "name": "Driver Park",
         "siteType": "Park",
-        "address": "6031 Genoa St, Oakland",
         "treeCount": "5",
         "treeType": "2 Plums, 3 Apples"
       }
@@ -1272,7 +1212,6 @@ var treePoints = {
         "year": "2016",
         "name": "Castlemont H.S. Food Forest and Farm",
         "siteType": "School",
-        "address": "8601 MacArthur Blvd",
         "treeCount": "6",
         "treeType": "Avocado, Elderberry, 4 Tangerines"
       }
@@ -1292,7 +1231,6 @@ var treePoints = {
         "year": "2016",
         "name": "CUES + Futures @ Lockwood Elementary",
         "siteType": "School",
-        "address": "6701 International Blvd, Oakland, CA 94",
         "treeCount": "8",
         "treeType": "2 Pineapple Guavas, 1 Fig, 2 Persimmon, 2 Tangerines, 3 Apples"
       }
@@ -1312,7 +1250,6 @@ var treePoints = {
         "year": "2016",
         "name": "Mindful Life Project @ Lake Elementary",
         "siteType": "School",
-        "address": "2700 11th St, San Pablo, CA 94806",
         "treeCount": "17",
         "treeType": "1 Apple, 2 Pears, 1 Asian Pear, 2 Apricots, 2 Avocados, 1 Plum, 2 Oranges, 1 Tangerine, 1 Lemon, 2 Pineapple Guavas, 1 Fig, 1 Persimmon"
       }
@@ -1332,7 +1269,6 @@ var treePoints = {
         "year": "2016",
         "name": "Temescal Library Food Forest",
         "siteType": "Community Center",
-        "address": "5205 Telegraph Ave, Oakland, CA 94609",
         "treeCount": "1",
         "treeType": "Asian Pear"
       }
@@ -1352,7 +1288,6 @@ var treePoints = {
         "year": "2016",
         "name": "Oakland Zoo",
         "siteType": "Community Center",
-        "address": "9777 Golf Links Rd, Oakland, CA 94605",
         "treeCount": "20",
         "treeType": "15 Live Oak, 5 Avocado"
       }
@@ -1372,7 +1307,6 @@ var treePoints = {
         "year": "2017",
         "name": "MLK Day @ Driver Plaza",
         "siteType": "Park",
-        "address": "6031 Genoa St, Oakland",
         "treeCount": "8",
         "treeType": "8 Pears"
       }
@@ -1392,7 +1326,6 @@ var treePoints = {
         "year": "2017",
         "name": "RISE Community School",
         "siteType": "School",
-        "address": "8521 A St, Oakland, CA 94621",
         "treeCount": "13",
         "treeType": "1 Lemon, 2 Tangerines, 2 Pomegranates, 2 Pears, 2 Apples, 2 Pineapple Guavas, 1 Persimmon, 1 Mulberry"
       }
@@ -1412,7 +1345,6 @@ var treePoints = {
         "year": "2017",
         "name": "Oakland Zoo",
         "siteType": "Community Center",
-        "address": "9777 Golf Links Rd",
         "treeCount": "31",
         "treeType": "15 Quercus lobata, 3 Acer rubrum, 3 Cinamom camphora, 5 Cedrus deodara, 2 Apples, 3 Pears"
       }
@@ -1432,7 +1364,6 @@ var treePoints = {
         "year": "2017",
         "name": "Brookfield Elementary",
         "siteType": "School",
-        "address": "401 Jones Ave, Oakland",
         "treeCount": "15",
         "treeType": "2 Apples, 3 Pears, 4 Tangerines, 4 Pomegranates, 2 Lemons"
       }
@@ -1452,7 +1383,6 @@ var treePoints = {
         "year": "2017",
         "name": "Mills College Community Farm",
         "siteType": "School",
-        "address": "5000 MacArthur Blvd, Oakland, CA 94613",
         "treeCount": "23",
         "treeType": "Misc. Fruit Trees - List not available"
       }
@@ -1462,8 +1392,8 @@ var treePoints = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -122.1640862,
-          37.7591887
+          -122.165322,
+          37.758125
         ]
       },
       "properties": {
@@ -1472,7 +1402,6 @@ var treePoints = {
         "year": "2017",
         "name": "Castlemont H.S. Farm ",
         "siteType": "School",
-        "address": "8601 MacArthur Blvd",
         "treeCount": "16",
         "treeType": "1 Elderberry, 5 Tangerines, 2 Grapefruits, 2 Lemon, 1 Lime, 5 Guavas"
       }
@@ -1491,8 +1420,7 @@ var treePoints = {
         "photo": "images/72.jpg",
         "year": "2017",
         "name": "Phat Beets Produce",
-        "siteType": "Community Garden",
-        "address": "5707 Dover St, Oakland, CA 94609",
+        "siteType": "Park",
         "treeCount": "8",
         "treeType": "2 Plums, 2 Oranges, 2 Apples, 2 Lemons"
       }
@@ -1512,18 +1440,17 @@ var treePoints = {
         "year": "2017",
         "name": "Global Family Elementary",
         "siteType": "School",
-        "address": "2035 40th Ave, Oakland, CA 94601",
         "treeCount": "6",
         "treeType": "2 Lemons, 2 Tangerines, 1 Grapefruit, 1 Orange"
       }
     }
-    ]
+  ]
 };
 
 
 //Create My Custom Icon 
-var treeIcon = L.icon({
-	iconUrl:      'images/treeIcon.png',
+var communityGardenIcon = L.icon({
+	iconUrl:      'images/communityGarden.png',
 	iconSize:     [30, 30],
 	iconAnchor:   [15, 15],
 	popupAnchor:  [0, -15] 
@@ -1557,8 +1484,8 @@ var streetsideIcon = L.icon({
 	popupAnchor:  [0, -15] 
 })
 
-var parkCommunityGardenIcon = L.icon({
-	iconUrl:      'images/parkCommunityGarden.png',
+var parkIcon = L.icon({
+	iconUrl:      'images/park.png',
 	iconSize:     [30, 30],
 	iconAnchor:   [15, 15],
 	popupAnchor:  [0, -15] 
@@ -1639,13 +1566,25 @@ $(function(){
 });
 
 $(function(){
+	communityGardenTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Community Garden";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:communityGardenIcon});
+		}
+	}).addTo(map);
+});
+
+$(function(){
 	parkTrees = L.geoJson(treePoints,{
 		onEachFeature: makeMarkers,
 		filter: function (feature, layer) {
-			return feature.properties.siteType == "Park / Community Garden";	
+			return feature.properties.siteType == "Park";	
 		},
 		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:parkCommunityGardenIcon});
+			return L.marker(latlng, {icon:parkIcon});
 		}
 	}).addTo(map);
 });
