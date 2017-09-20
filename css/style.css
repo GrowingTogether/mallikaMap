@@ -29,7 +29,6 @@ h1{
 	width: 100%;
 	z-index: 400;
 	background: rgba(255, 255, 255, 0.9);
-	color: #555;
 	padding: 7px;
 	box-sizing: border-box;
 }
@@ -92,12 +91,10 @@ h1{
 	bottom: 25px;
 	right: 25px;
 	background: rgba(255, 255, 255, 0.95);
-	color: #555;
 	outline: 2px solid white;
 	outline-offset: 3px;
     z-index: 10000000;
     position: fixed;
-    background-color: white;
     padding: 15px;
     }
 
