@@ -23,28 +23,6 @@ L.control.zoom({position: 'bottomleft'}).addTo(map);
 	//     [37.697805, -122.079851]
 	// ]);
 
-// Failed Attempt at creating Variables
-// var trees2013 = $("[year=2013]");
-
-// Try 3 Creating Variables
-
-// var trees2013_3 = L.geoJson(myJson, {filter: year2013get});
-// var trees2013_3 = L.geoJson(myJson, {filter: year2013get}).addTo(map);
-
-// function year2013get(feature) {
-//   if (feature.properties.year === "2013") return true
-// }
-
-// Try 3 at getting a year selector button
-
-	// var toggle2013 = document.getElementById('button2013');
-	// button2013.onclick = function() {
-	//     console.log('Show 2013 Trees!');
-	//     console.log(trees2013_3);
-	//     $('trees2013_3').animate({"opacity": .1});
-	// }
-//  };
-
 // // Load External geoJSON
 // var treePoints = $.getJSON('./js/geoJSON.json',function(data){
 // 	// var geojsonLayer = L.geoJson(data.features, {
@@ -1517,101 +1495,196 @@ var panMarkers = L.geoJson(treePoints, {
 			// }
 		});
 
-$(function(){
-	residencesTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Residences";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:residencesIcon});
-		}
-	}).addTo(map);
+//Creating Different Markers for each siteType
+
+// $(function(){
+// 	residencesTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Residences";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:residencesIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	providerTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Service Provider";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:serviceProviderIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	schoolTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "School";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:schoolIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	streetsideTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Streetside";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:streetsideIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	communityGardenTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Community Garden";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:communityGardenIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	parkTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Park";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:parkIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	communityCenterTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Community Center";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:communityCenterIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+// $(function(){
+// 	placeOfWorshipTrees = L.geoJson(treePoints,{
+// 		onEachFeature: makeMarkers,
+// 		filter: function (feature, layer) {
+// 			return feature.properties.siteType == "Place of Worship";	
+// 		},
+// 		pointToLayer: function (feature, latlng) {
+// 			return L.marker(latlng, {icon:placeOfWorshipIcon});
+// 		}
+// 	}).addTo(map);
+// });
+
+//Script for controls
+
+
+
+// Failed Attempt at creating Variables
+// var trees2013 = $("[year=2013]");
+
+// Try 3 Creating Variables
+
+// var trees2013_3 = L.geoJson(myJson, {filter: year2013get});
+// var trees2013_3 = L.geoJson(myJson, {filter: year2013get}).addTo(map);
+
+// function year2013get(feature) {
+//   if (feature.properties.year === "2013") return true
+// }
+
+// Try 3 at getting a year selector button
+
+  // trees2013 = L.geoJson(treePoints,{
+  //   filter: function (feature, layer) {
+  //     return feature.properties.year == "2013"; 
+  //   },
+  // });
+
+  //  var toggle2013 = document.getElementById('button2013');
+  //  button2013.onclick = function() {
+  //      console.log('Show 2013 Trees!');
+  //      console.log(trees2013);
+  //      $('#expBar').animate({height:'300px'}, 500);
+  //      $('trees2013').animate({height:'60px'}, 500);
+  // };
+
+ // Try 4 at getting a year selector button
+
+// $(function(){
+//   trees2013 = L.geoJson(treePoints,{
+//     filter: function (feature, layer) {
+//       return feature.properties.year == "2013";
+//     },  
+//       button2013.onclick = function() {
+//        console.log('Show 2013 Trees!');
+//        console.log(trees2013);
+//        $('#expBar').animate({height:'300px'}, 500);
+//        $('trees2013').animate({height:'60px'}, 500);
+//       };
+// });
+
+  // Function to remove points
+    function removetreePoints(){
+      map.removeLayer(treePoints);
+    };
+
+ // Try 6 at getting a year selector button
+
+var trees2013 = L.geoJson(treePoints,{
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:schoolIcon});
+  }
 });
 
-$(function(){
-	providerTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Service Provider";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:serviceProviderIcon});
-		}
-	}).addTo(map);
-});
+$( "#button2013" ).click(function() {
+  removetreePoints();
+  trees2013.addTo(map);
+    });
+
+ // Try 5 at getting a year selector button
+    // $( "#button2013" ).click(function() {
+    //   removetreePoints();
+    //       trees2013 = L.geoJson(treePoints,{
+    //       filter: function (feature, layer) {
+    //         return feature.properties.year == "2013";
+    //       }
+    //     }).addTo(map);
+    // });
+
 
 $(function(){
-	schoolTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "School";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:schoolIcon});
-		}
-	}).addTo(map);
+ schoolTrees = L.geoJson(treePoints,{
+   onEachFeature: makeMarkers,
+   filter: function (feature, layer) {
+     return feature.properties.siteType == "School"; 
+   },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:schoolIcon});
+   }
+ }).addTo(map);
 });
 
-$(function(){
-	streetsideTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Streetside";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:streetsideIcon});
-		}
-	}).addTo(map);
-});
-
-$(function(){
-	communityGardenTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Community Garden";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:communityGardenIcon});
-		}
-	}).addTo(map);
-});
-
-$(function(){
-	parkTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Park";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:parkIcon});
-		}
-	}).addTo(map);
-});
-
-$(function(){
-	communityCenterTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Community Center";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:communityCenterIcon});
-		}
-	}).addTo(map);
-});
-
-$(function(){
-	placeOfWorshipTrees = L.geoJson(treePoints,{
-		onEachFeature: makeMarkers,
-		filter: function (feature, layer) {
-			return feature.properties.siteType == "Place of Worship";	
-		},
-		pointToLayer: function (feature, latlng) {
-			return L.marker(latlng, {icon:placeOfWorshipIcon});
-		}
-	}).addTo(map);
-});
+//Script for getting site detials on click
 
 function makeMarkers(feature, layer) {
 	var thisFeature = feature.properties;
