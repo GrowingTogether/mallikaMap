@@ -1593,9 +1593,8 @@ var panMarkers = L.geoJson(treePoints, {
 // 	}).addTo(map);
 // });
 
+
 //Script for controls
-
-
 
 // Failed Attempt at creating Variables
 // var trees2013 = $("[year=2013]");
@@ -1640,11 +1639,17 @@ var panMarkers = L.geoJson(treePoints, {
 //       };
 // });
 
-  // Function to remove points
-    function removetreePoints(){
-      map.removeLayer(treePoints);
-    };
+// Function to remove points
+  function removetreePoints(){
+    map.removeLayer(treePoints);
+  };
 
+// Test removing all
+
+$( "#buttonAll" ).click(function() {
+  map.removeLayer(treePoints);
+  console.log ("GONE BABY");
+});
 
 
 // Try 7 at getting a year selector button
@@ -1659,10 +1664,456 @@ var trees2013school = L.geoJson(treePoints,{
   }
 });
 
+var trees2013park = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Park";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:parkIcon});
+  }
+});
+
+var trees2013communityGarden = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Community Garden";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:communityGardenIcon});
+  }
+});
+
+var trees2013residences = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Residences";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:residencesIcon});
+  }
+});
+
+var trees2013provider = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Service Provider";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:serviceProviderIcon});
+  }
+});
+
+var trees2013streetside = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Streetside";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: streetsideIcon});
+  }
+});
+
+var trees2013communityCenter = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Community Center";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: communityCenterIcon});
+  }
+});
+
+var trees2013placeOfWorship = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2013" && feature.properties.siteType == "Place of Worship";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: placeOfWorshipIcon});
+  }
+});
+
 $( "#button2013" ).click(function() {
   removetreePoints();
   trees2013school.addTo(map);
-    });
+  trees2013park.addTo(map);
+  trees2013communityGarden.addTo(map);
+  trees2013residences.addTo(map);
+  trees2013provider.addTo(map);
+  trees2013streetside.addTo(map);
+  trees2013communityCenter.addTo(map);
+  trees2013placeOfWorship.addTo(map);
+});
+
+var trees2014school = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "School";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:schoolIcon});
+  }
+});
+
+var trees2014park = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Park";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:parkIcon});
+  }
+});
+
+var trees2014communityGarden = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Community Garden";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:communityGardenIcon});
+  }
+});
+
+var trees2014residences = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Residences";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:residencesIcon});
+  }
+});
+
+var trees2014provider = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Service Provider";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:serviceProviderIcon});
+  }
+});
+
+var trees2014streetside = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Streetside";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: streetsideIcon});
+  }
+});
+
+var trees2014communityCenter = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Community Center";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: communityCenterIcon});
+  }
+});
+
+var trees2014placeOfWorship = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2014" && feature.properties.siteType == "Place of Worship";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: placeOfWorshipIcon});
+  }
+});
+
+$( "#button2014" ).click(function() {
+  removetreePoints();
+  trees2014school.addTo(map);
+  trees2014park.addTo(map);
+  trees2014communityGarden.addTo(map);
+  trees2014residences.addTo(map);
+  trees2014provider.addTo(map);
+  trees2014streetside.addTo(map);
+  trees2014communityCenter.addTo(map);
+  trees2014placeOfWorship.addTo(map);
+});
+
+
+var trees2015school = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "School";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:schoolIcon});
+  }
+});
+
+var trees2015park = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Park";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:parkIcon});
+  }
+});
+
+var trees2015communityGarden = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Community Garden";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:communityGardenIcon});
+  }
+});
+
+var trees2015residences = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Residences";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:residencesIcon});
+  }
+});
+
+var trees2015provider = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Service Provider";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:serviceProviderIcon});
+  }
+});
+
+var trees2015streetside = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Streetside";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: streetsideIcon});
+  }
+});
+
+var trees2015communityCenter = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Community Center";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: communityCenterIcon});
+  }
+});
+
+var trees2015placeOfWorship = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2015" && feature.properties.siteType == "Place of Worship";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: placeOfWorshipIcon});
+  }
+});
+
+$( "#button2015" ).click(function() {
+  removetreePoints();
+  trees2015school.addTo(map);
+  trees2015park.addTo(map);
+  trees2015communityGarden.addTo(map);
+  trees2015residences.addTo(map);
+  trees2015provider.addTo(map);
+  trees2015streetside.addTo(map);
+  trees2015communityCenter.addTo(map);
+  trees2015placeOfWorship.addTo(map);
+});
+
+var trees2016school = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "School";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:schoolIcon});
+  }
+});
+
+var trees2016park = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Park";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:parkIcon});
+  }
+});
+
+var trees2016communityGarden = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Community Garden";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:communityGardenIcon});
+  }
+});
+
+var trees2016residences = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Residences";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:residencesIcon});
+  }
+});
+
+var trees2016provider = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Service Provider";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:serviceProviderIcon});
+  }
+});
+
+var trees2016streetside = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Streetside";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: streetsideIcon});
+  }
+});
+
+var trees2016communityCenter = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Community Center";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: communityCenterIcon});
+  }
+});
+
+var trees2016placeOfWorship = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2016" && feature.properties.siteType == "Place of Worship";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: placeOfWorshipIcon});
+  }
+});
+
+$( "#button2016" ).click(function() {
+  removetreePoints();
+  trees2016school.addTo(map);
+  trees2016park.addTo(map);
+  trees2016communityGarden.addTo(map);
+  trees2016residences.addTo(map);
+  trees2016provider.addTo(map);
+  trees2016streetside.addTo(map);
+  trees2016communityCenter.addTo(map);
+  trees2016placeOfWorship.addTo(map);
+});
+
+var trees2017school = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "School";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:schoolIcon});
+  }
+});
+
+var trees2017park = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Park";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:parkIcon});
+  }
+});
+
+var trees2017communityGarden = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Community Garden";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:communityGardenIcon});
+  }
+});
+
+var trees2017residences = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Residences";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:residencesIcon});
+  }
+});
+
+var trees2017provider = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Service Provider";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon:serviceProviderIcon});
+  }
+});
+
+var trees2017streetside = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Streetside";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: streetsideIcon});
+  }
+});
+
+var trees2017communityCenter = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Community Center";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: communityCenterIcon});
+  }
+});
+
+var trees2017placeOfWorship = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
+  filter: function (feature, layer) {
+    return feature.properties.year == "2017" && feature.properties.siteType == "Place of Worship";
+  },
+   pointToLayer: function (feature, latlng) {
+     return L.marker(latlng, {icon: placeOfWorshipIcon});
+  }
+});
+
+$( "#button2017" ).click(function() {
+  removetreePoints();
+  trees2017school.addTo(map);
+  trees2017park.addTo(map);
+  trees2017communityGarden.addTo(map);
+  trees2017residences.addTo(map);
+  trees2017provider.addTo(map);
+  trees2017streetside.addTo(map);
+  trees2017communityCenter.addTo(map);
+  trees2017placeOfWorship.addTo(map);
+});
 
 // Try 6 at getting a year selector button (THIS KIND OF WORKS)
 
