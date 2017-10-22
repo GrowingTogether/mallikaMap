@@ -1650,6 +1650,7 @@ var panMarkers = L.geoJson(treePoints, {
 // Try 7 at getting a year selector button
 
 var trees2013school = L.geoJson(treePoints,{
+  onEachFeature: makeMarkers,
   filter: function (feature, layer) {
     return feature.properties.year == "2013" && feature.properties.siteType == "School";
   },
@@ -1688,18 +1689,6 @@ $( "#button2013" ).click(function() {
     //       }
     //     }).addTo(map);
     // });
-
-// $(function(){
-//  schoolTrees = L.geoJson(treePoints,{
-//    onEachFeature: makeMarkers,
-//    filter: function (feature, layer) {
-//      return feature.properties.siteType == "School"; 
-//    },
-//    pointToLayer: function (feature, latlng) {
-//      return L.marker(latlng, {icon:schoolIcon});
-//    }
-//  }).addTo(map);
-// });
 
 //Script for getting site detials on click
 
