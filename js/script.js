@@ -1645,11 +1645,13 @@ var panMarkers = L.geoJson(treePoints, {
       map.removeLayer(treePoints);
     };
 
- // Try 6 at getting a year selector button
 
-var trees2013 = L.geoJson(treePoints,{
+
+// Try 7 at getting a year selector button
+
+var trees2013school = L.geoJson(treePoints,{
   filter: function (feature, layer) {
-    return feature.properties.year == "2013";
+    return feature.properties.year == "2013" && feature.properties.siteType == "School";
   },
    pointToLayer: function (feature, latlng) {
      return L.marker(latlng, {icon:schoolIcon});
@@ -1658,8 +1660,24 @@ var trees2013 = L.geoJson(treePoints,{
 
 $( "#button2013" ).click(function() {
   removetreePoints();
-  trees2013.addTo(map);
+  trees2013school.addTo(map);
     });
+
+// Try 6 at getting a year selector button (THIS KIND OF WORKS)
+
+// var trees2013 = L.geoJson(treePoints,{
+//   filter: function (feature, layer) {
+//     return feature.properties.year == "2013";
+//   },
+//    pointToLayer: function (feature, latlng) {
+//      return L.marker(latlng, {icon:schoolIcon});
+//   }
+// });
+
+// $( "#button2013" ).click(function() {
+//   removetreePoints();
+//   trees2013.addTo(map);
+//     });
 
  // Try 5 at getting a year selector button
     // $( "#button2013" ).click(function() {
@@ -1671,18 +1689,17 @@ $( "#button2013" ).click(function() {
     //     }).addTo(map);
     // });
 
-
-$(function(){
- schoolTrees = L.geoJson(treePoints,{
-   onEachFeature: makeMarkers,
-   filter: function (feature, layer) {
-     return feature.properties.siteType == "School"; 
-   },
-   pointToLayer: function (feature, latlng) {
-     return L.marker(latlng, {icon:schoolIcon});
-   }
- }).addTo(map);
-});
+// $(function(){
+//  schoolTrees = L.geoJson(treePoints,{
+//    onEachFeature: makeMarkers,
+//    filter: function (feature, layer) {
+//      return feature.properties.siteType == "School"; 
+//    },
+//    pointToLayer: function (feature, latlng) {
+//      return L.marker(latlng, {icon:schoolIcon});
+//    }
+//  }).addTo(map);
+// });
 
 //Script for getting site detials on click
 
