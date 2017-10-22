@@ -1497,101 +1497,101 @@ var panMarkers = L.geoJson(treePoints, {
 
 //Creating Different Markers for each siteType
 
-// $(function(){
-// 	residencesTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Residences";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:residencesIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	residencesTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Residences";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:residencesIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	providerTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Service Provider";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:serviceProviderIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	providerTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Service Provider";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:serviceProviderIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	schoolTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "School";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:schoolIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	schoolTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "School";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:schoolIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	streetsideTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Streetside";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:streetsideIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	streetsideTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Streetside";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:streetsideIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	communityGardenTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Community Garden";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:communityGardenIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	communityGardenTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Community Garden";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:communityGardenIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	parkTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Park";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:parkIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	parkTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Park";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:parkIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	communityCenterTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Community Center";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:communityCenterIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	communityCenterTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Community Center";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:communityCenterIcon});
+		}
+	}).addTo(map);
+});
 
-// $(function(){
-// 	placeOfWorshipTrees = L.geoJson(treePoints,{
-// 		onEachFeature: makeMarkers,
-// 		filter: function (feature, layer) {
-// 			return feature.properties.siteType == "Place of Worship";	
-// 		},
-// 		pointToLayer: function (feature, latlng) {
-// 			return L.marker(latlng, {icon:placeOfWorshipIcon});
-// 		}
-// 	}).addTo(map);
-// });
+$(function(){
+	placeOfWorshipTrees = L.geoJson(treePoints,{
+		onEachFeature: makeMarkers,
+		filter: function (feature, layer) {
+			return feature.properties.siteType == "Place of Worship";	
+		},
+		pointToLayer: function (feature, latlng) {
+			return L.marker(latlng, {icon:placeOfWorshipIcon});
+		}
+	}).addTo(map);
+});
 
 
 //Script for controls
@@ -1639,17 +1639,24 @@ var panMarkers = L.geoJson(treePoints, {
 //       };
 // });
 
-// Function to remove points
+// Function to remove points - NOT WORKING
+  // function removetreePoints(){
+  //   map.removeLayer(treePoints);
+  // };
+
+// Function to remove points Try 2 
   function removetreePoints(){
-    map.removeLayer(treePoints);
+    $('.leaflet-marker-icon').hide();
   };
 
 // Test removing all
 
-$( "#buttonAll" ).click(function() {
-  map.removeLayer(treePoints);
-  console.log ("GONE BABY");
+$("#buttonAll").click(function() {
+  // $('.leaflet-marker-icon').animate({opacity:'300px'}, 500);
+  $('.leaflet-marker-icon').hide();
+  console.log ('GONE BABY')
 });
+
 
 
 // Try 7 at getting a year selector button
