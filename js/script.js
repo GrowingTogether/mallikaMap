@@ -1589,6 +1589,14 @@ function showAll(){
   addMarkers();
 }
 
+//All Year Start Highlighted
+
+$(function(){
+  $("#buttonAll").addClass('active');
+});
+
+//Button Click Events
+
 $( "#button2013" ).click(function() {
   addMarkersForYear(2013);
 });
@@ -1613,6 +1621,17 @@ $( "#buttonAll" ).click(function() {
   showAll();
 });
 
+//Keep button highlighted until a new one is clicked
+
+$(document).ready(function() {
+    $("#controls > button").click(function(){
+        $("#controls > button").each(function(){
+            $(this).removeClass("active");
+        });
+        $(this).addClass('active');
+        
+    });
+});
 
 
 function makeMarkers(feature, layer) {

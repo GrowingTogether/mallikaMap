@@ -18,7 +18,6 @@ h1{
 }
 span{
 	/*min-height: 100px;*/
-  	display: inline-flex;
   	align-items: center;
 }
 
@@ -30,7 +29,7 @@ span{
 #expBar {
 	position: absolute;
 	top: 0;
-	height: 160px;
+	height: 170px;
 	width: 100%;
 	z-index: 400;
 	background: rgba(255, 255, 255, 0.9);
@@ -46,7 +45,7 @@ span{
 /* Left side of the Top Bar*/
 	#titles{
 	float: left;
-	width: 40%;
+	width: 55%;
 	}
 
 	#title {
@@ -89,7 +88,7 @@ span{
 	    border-bottom: 3px solid #feda5d;
 	}
 
-	button:focus {     
+	.active {     
 	    background-color: #feda5d;
 	    color: white;
 	    outline:0;
@@ -99,7 +98,7 @@ span{
 
 	#information {
 		float: right;
-		width: 60%;
+		width: 45%;
 	}
 
 	#photo {
@@ -109,7 +108,7 @@ span{
 
 	#locationStats {
 		font-size: 12px;
-		max-width: 550px;
+		/*max-width: 550px;*/
 	}
 
 	#titlePlate {
@@ -139,9 +138,15 @@ span{
     font-size: 15px;
     font-style: oblique;
     padding-bottom: 20px;
+    font-family: 'Lora';
+}
+
+.infoLine{
+	display: inline-flex;
 }
 
 #infoText{
 	text-align: left;
-	font-size: 10px;
+	font-size: 12px;
+	font-family: 'system-ui';
 }
