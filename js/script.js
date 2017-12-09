@@ -3,25 +3,22 @@
 		zoomControl: false,
 		// layers: [cities, cities14]
 	})
-		.setView([37.8071415 , -122.2586092], 12);
+		.setView([37.894701 , -122.390890], 11);
+
+// Setting up the scrollable boundaries of the Map - silly, you can still pan
+  // var p1 = L.latLng(38.078390, -122.808915),
+  // p2 = L.latLng(37.697805, -122.079851),
+  // myBounds = L.latLngBounds(p1, p2);
+
 
 //Set Up Basemap Tiles From Stamen
 L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-	maxZoom: 17,
+	// bounds: myBounds,
+  maxZoom: 16,
 	minZoom: 11
 }).addTo(map);
-L.control.zoom({position: 'bottomleft'}).addTo(map);
-
-//Setting up the scrollable boundaries of the Map - doesn't work
-	// var corner1 = L.latLng(38.078390, -122.808915),
-	// corner2 = L.latLng(37.697805, -122.079851),
-	// bounds = L.latLngBounds(corner1, corner2);
-
-	// map.fitBounds([
-	//     [38.078390, -122.808915],
-	//     [37.697805, -122.079851]
-	// ]);
+L.control.zoom({position: 'bottomright'}).addTo(map);
 
 // Failed Attempt at creating Variables
 // var trees2013 = $("[year=2013]");
